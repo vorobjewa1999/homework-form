@@ -1,0 +1,305 @@
+body {
+    margin: 0;
+    padding: 0;
+    counter-reset: p;
+    font-family: 'Manrope', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+/* 1 блок */
+.form-radio-hidden-one {
+    display: flex;
+    height: 28px;
+  }
+
+.form-radio-hidden-one input{
+  width: 0;
+}
+
+.form-radio-hidden-one .radio {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background-color: red;
+}
+  
+.form-radio-hidden-one input + .radio + .text{
+  margin-right: 10px; 
+}
+/* 2 блок */
+.form-radio-hidden-two {
+  display: flex;
+  height: 28px;
+}
+
+.form-radio-hidden-two input{
+  width: 0;
+}
+
+.form-radio-hidden-two .radio {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background-color: #FFB800;
+}
+  
+.form-radio-hidden-two input + .radio + .text{
+  margin-right: 10px; 
+}
+  /* 3 блок */
+.form-radio-hidden-three {
+  display: flex;
+  height: 28px;
+}
+
+.form-radio-hidden-three input{
+  width: 0;
+}
+
+.form-radio-hidden-three .radio {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background-color: #FAFF00;
+}
+  
+.form-radio-hidden-three input + .radio + .text{
+  margin-right: 10px; 
+}
+  /* 4 блок */
+.form-radio-hidden-four {
+  display: flex;
+  height: 28px;
+}
+
+.form-radio-hidden-four input{
+  width: 0;
+}
+
+.form-radio-hidden-four .radio {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background-color: #52FF00;
+}
+  
+.form-radio-hidden-four input + .radio + .text{
+  margin-right: 10px; 
+}
+  /* 5 блок */
+.form-radio-hidden-five {
+  display: flex;
+  height: 28px;
+}
+
+.form-radio-hidden-five input{
+  width: 0;
+}
+
+.form-radio-hidden-five .radio {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background-color: #00FFF0;
+}
+  
+.form-radio-hidden-five input + .radio + .text{
+  margin-right: 10px; 
+}
+  /* 6 блок */
+.form-radio-hidden-six {
+  display: flex;
+  height: 28px;
+}
+
+.form-radio-hidden-six input{
+  width: 0;
+}
+
+.form-radio-hidden-six .radio {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background-color: #0029FF;
+}
+  
+.form-radio-hidden-six input + .radio + .text{
+  margin-right: 10px; 
+}
+  /* 7 блок */
+.form-radio-hidden-seven {
+  display: flex;
+  height: 28px;
+}
+
+.form-radio-hidden-seven input{
+  width: 0;
+}
+
+.form-radio-hidden-seven .radio {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background-color: #7000FF;
+}
+  
+.form-radio-hidden-seven input + .radio + .text{
+  margin-right: 10px; 
+}
+  /* Блок 8 */
+p {
+  padding-left: 40px;
+  display: flex;
+}
+
+p {
+  counter-increment: my-counter 0;
+}
+
+p:before {
+  counter-increment: my-counter;
+  content: counter(my-counter) " -";
+  margin-right: 12px;
+  color: black;
+  font-weight: 700;
+}
+  /* Блок 9 */
+  /* 1 прямоугольник */
+.visually-hidden-one {
+  clip-path: inset(100%);
+}
+  
+.radio__input-one:checked + span {
+  width: 130px;
+  height: 60px;
+  left: 129px;
+  top: 104px;
+  background: #000000;
+}
+    
+.radio__one span {
+  display: inline-block;
+  margin-left: 129px;
+}
+  
+    /* круг внутри */
+.form-radio-hidden-circle input{
+  width: 0;
+}
+  
+.form-radio-hidden-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 20px;
+  background-color: #FFEE58;
+  position: absolute;
+  margin-left: 49px;
+  margin-top: 14px;
+}
+  /* 2 прямоугольник */
+.visually-hidden-two {
+  clip-path: inset(100%);
+}
+  
+.radio__input-two:checked + span {
+  box-sizing: border-box;
+  width: 150px;
+  height: 60px;
+  margin-left: 119px;
+  margin-top: -5px;
+  background-color: #FFFFFF;
+  border: 1px solid #000000;
+}
+    
+.radio__two span {
+  display: inline-block;
+}
+  /* 3 прямоугольник */
+.visually-hidden-three {
+  clip-path: inset(100%);
+}
+  
+.radio__input-three:checked + span {
+  width: 170px;
+  height: 60px;
+  margin-left: 109px;
+  margin-top: -5px;
+  background-color: #FF0000;
+}
+    
+.radio__three span {
+  display: inline-block;
+}
+  /* 4 прямоугольник */
+.visually-hidden-four {
+  clip-path: inset(100%);
+}
+  
+.radio__input-four:checked + span {
+  width: 190px;
+  height: 60px;
+  margin-left: 99px;
+  margin-top: -5px;
+  background-color: #FFFFFF;
+  border: 1px solid #000000;
+}
+    
+.radio__four span {
+  display: inline-block;
+}
+/* 5 прямоугольник */
+.visually-hidden-five {
+  clip-path: inset(100%);
+}
+  
+.radio__input-five:checked + span {
+  width: 210px;
+  height: 60px;
+  margin-left: 89px;
+  margin-top: -5px;
+  background-color: #FF0000;
+}
+    
+.radio__five span {
+  display: inline-block;
+}
+/* 6 прямоугольник */
+.visually-hidden-six {
+  clip-path: inset(100%);
+}
+  
+.radio__input-six:checked + span {
+  width: 250px;
+  height: 60px;
+  margin-left: 69px;
+  margin-top: -5px;
+  background-color: #FFFFFF;
+  border: 1px solid #000000;
+}
+    
+.radio__six span {
+  display: inline-block;
+}
+
+  
+ 
+  
+ 
+
+
+
+
+
+
+  
+  
+
